@@ -1,0 +1,31 @@
+body{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/LargeBinoTelescope_NASA.jpg/800px-LargeBinoTelescope_NASA.jpg');
+    background-size: auto 100vh;
+    font-family: verdana;
+    height: 100vh;
+  }
+  .menu{
+    background-color: white;
+  }
+  .menu li{
+    list-style: none;
+  }
+  .menu ul{
+    display: flex;
+    justify-content: space-around;
+  }
+  a{
+    text-decoration: none;
+    color: teal;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+  .site-title, .site-subtitle{
+    color: whitesmoke;
+    text-align: center;
+  }
+  .site-subtitle{
+    font-style: italic;
+  }
+  
