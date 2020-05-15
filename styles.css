@@ -1,0 +1,158 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    background-image: url('https://chandra.harvard.edu/photo/2016/ngc6357/ngc6357.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    height: auto;
+    font-size: 12px;
+    backdrop-filter: blur(2px);
+  }
+  /*se a tela tiver pelo menos 400px vai carregar os estilos
+  media query são chamados de breakpoint*/
+  @media (min-width: 400px) {
+    body{
+      font-size: 14px;
+    }
+  }
+  @media (min-width: 600px) {
+    body{
+      font-size: 18px;
+    }
+  }
+  @media (min-width: 1100px) {
+    body{
+      font-size: 24px;
+    }
+  }
+  header{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu{
+    background-color: white;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 1;
+  }
+  .menu li{
+    list-style: none;
+  }
+  .menu ul{
+    display: flex;
+    justify-content: space-around;
+  }
+  .menu a{
+    display: block;
+    padding: 10px 20px;
+    transition: background-color 1s, color 1s; /* só funciona combinado com a:hover*/
+  }
+  .menu a:active,/*usado para mobile pq ele não ativa hover*/
+  .menu a:hover{
+    background-color: darkorchid;
+    color: whitesmoke;
+  }
+  a{
+    text-decoration: none;
+    color: darkorchid;
+    font-family:'Mukta', sans-serif;
+    font-weight: 700;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+
+  .titulo{
+    transform: scale(0.2) translateY(50vh);
+    opacity: 0;
+    animation: linear 2s animacaoTitulo forwards;
+  }
+  @keyframes animacaoTitulo{
+    from{
+      transform: scale(0.2) translateY(50vh);
+      opacity: 0;
+    }
+    to{
+      transform: scale(1) translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .site-title, .site-subtitle{
+    color: whitesmoke;
+    text-align: center;
+  }
+
+  .site-title{
+    font-size: 4em;
+    font-family: 'Mukta', sans-serif;
+  }
+  .site-subtitle{
+    /*font-style: italic;*/
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    line-height: 1.2em;
+  }
+  .contato,
+  .portfolio{
+    padding: 2em;
+    min-height: 100vh;
+  }
+  .contato h2,
+  .portfolio h2{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: whitesmoke;
+    margin-bottom: 0.5em;
+    font-size: 2em;
+  }
+  .portfolio .grid{
+    display: grid;
+    gap: 2em;
+    text-align: center;
+    color: whitesmoke;
+  }
+  @media(min-width: 560px){
+    .portfolio .grid{
+      grid-template-columns: 240px 240px;
+    }
+  }
+  @media(min-width: 880px){
+    .portfolio .grid{
+      grid-template-columns: repeat(3, 260px);
+      align-content: center;
+      justify-content: center;
+      /*height: calc(100vh - 8em - 48px);*/
+    }
+  }
+  .img-portfolio{
+    width: 200px;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    transition: transform 500ms;
+  }
+  .img-portfolio:hover{
+    transform: scale(1.3) rotate(-2deg);
+  }
+  .contato .icons{
+    text-align: center;
+  }
+  .contato a{
+    color: whitesmoke;
+    font-size: 2em;
+    transition: text-shadow 1s;
+  }
+  .contato a:active,
+  .contato a:hover{
+    text-decoration: none;
+    text-shadow: 0px 0px 10px rgba(203, 247, 6, 0.911);
+  }
+  

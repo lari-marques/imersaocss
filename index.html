@@ -4,19 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Mukta:wght@400;600&family=Roboto+Condensed:wght@300;400;700&family=Yanone+Kaffeesatz:wght@300;400;700&display=swap" rel="stylesheet">    
+    <script src="https://kit.fontawesome.com/815cee8316.js" crossorigin="anonymous"></script>
     <title>Larissa Marques</title>
 </head>
 <body>
     <header>
         <nav class="menu">
           <ul>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Portfólio</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
-        <h1 class="site-title">Larissa Marques</h1>
-        <h2 class="site-subtitle">junior web developer</h2>
+          <div class="titulo">
+            <h1 class="site-title">Larissa Marques</h1>
+            <h2 class="site-subtitle">junior web developer</h2>
+            <h2 class="site-subtitle">communications consultant</h2>
+        </div>
       </header>
+      <section class="portfolio" id="portfolio">
+        <h2>Projects</h2>
+        <div class="grid">
+          <figure>
+            <img class="img-portfolio" src="./img/VIBRA.deepbeep.jpeg" alt="vibra">
+            <figcaption>VIBRA Newsletter</figcaption>
+          </figure>
+          <figure>
+            <img class="img-portfolio" src="./img/baked.jpg" alt=">comms">
+            <figcaption>Communications</figcaption>
+          </figure>
+          <figure>
+            <img class="img-portfolio" src="./img/jscalculator.png" alt="Webdesign">
+            <figcaption>Web design</figcaption>
+          </figure>
+          <figure>
+            <img class="img-portfolio" src="./img/freecode.jpg" alt="cursos">
+            <figcaption>Improving</figcaption>
+          </figure>
+      </div>
+      </section>
+      <section class="contato" id="contact">
+        <h2>Contact</h2>
+        <div class="grid icons">
+          <a target="_blank" href="https://github.com/lari-marques">
+            <i class="fab fa-github"></i>
+          </a>
+          <a target="_blank" href="https://twitter.com/la_marques">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a target="_blank" href="https://www.linkedin.com/in/larissa-marqueslm/">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:larissa.ilumina@gmail.com">
+            <i class="fas fa-at"></i>
+          </a>
+        </div>
+      </section>
 </body>
 </html>
